@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class = "cart_body">
+<header id="header">
+    <div class="container_cart">
+        <button class="logo">
+            <img src="images/pennorLogo_mini_test.png" alt="Logo" title="Pennor.com">
+        </button>
+        <div id="nav">
+            <li><a href="cart.html">Cart</a></li>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+    <center><img class="break" src="images/break.png" alt="breakline"></center>
+</header>
+
+<div class="container">
+    <section id="cart">
+        <article class="product">
+            <header>
+                <a class="remove">
+                    <img src="http://www.arch2o.com/wp-content/uploads/2015/03/Arch2O-Pipo-Chair-004-700x898.jpg" alt="">
+                    <h3>Remove</h3>
+                </a>
+            </header>
+
+            <div class="content">
+                <h1>Lorem ipsum</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, numquam quis perspiciatis ea ad omnis provident laborum dolore in atque.                
+            </div>
+
+            <footer class="content">
+				<span class="quantity-minus">-</span>
+				<span class="quantity">2</span>
+				<span class="quantity-plus">+</span>
+              <h2 class="full-price">
+                    2998KR
+                </h2>
+
+                <h2 class="price">
+                    1499KR
+                </h2>
+            </footer>
+        </article>
+
+        <article class="product">
+            <header>
+                <a class="remove">
+                    <img src="https://www.otis.edu/sites/default/files/styles/thumbnail_slideshow/public/Furniture001.jpg?itok=CYbyrwZV" alt="">
+                    <h3>Remove</h3>
+                </a>
+            </header>
+
+            <div class="content">
+                <h1>Lorem ipsum dolor</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, numquam quis perspiciatis ea ad omnis provident laborum dolore in atque.
+            </div>
+
+            <footer class="content">
+
+                <span class="quantity-minus">-</span>
+                <span class="quantity">1</span>
+                <span class="quantity-plus">+</span>
+
+                <h2 class="full-price">
+                    3990KR
+                </h2>
+
+                <h2 class="price">
+                    3990KR
+                </h2>
+            </footer>
+        </article>
+
+        <article class="product">
+            <header>
+                <a class="remove">
+                    <img src="https://s7d9.scene7.com/is/image/BedBathandBeyond/43329107396cz?$478$" alt="">
+                    <h3>Remove</h3>
+                </a>
+            </header>
+
+            <div class="content">
+                <h1>Lorem ipsum dolor ipsdu</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, numquam quis perspiciatis ea ad omnis provident laborum dolore in atque.
+            </div>
+
+            <footer class="content">
+				<span class="quantity-minus">-</span>
+				<span class="quantity">6</span>
+				<span class="quantity-plus">+</span>
+              <h2 class="full-price">
+                    4794KR
+                </h2>
+
+                <h2 class="price">
+                    799KR
+                </h2>
+            </footer>
+        </article>
+    </section>
+
+</div>
+
+<footer id="bot-footer">
+    <div class="container clearfix">
+
+        <div class="left">
+            <h2 class="subtotal">Subtotal: <span>11782</span>KR</h2>
+            <h3 class="tax">Taxes (5%): <span>589,10</span>KR</h3>			
+			<h3>Select Shipping Method: 
+              <select id="shipping">
+              <option value="50">Standard 50.00KR</option>
+              <option value="100">Express 100.00KR</option>
+              <option value="150">Home Delivery 150.00KR</option>              
+              </select>					
+            </h3>			
+        </div>
+
+        <div class="right">
+            <h1 class="total">Total: <span>12421.10</span>KR</h1>
+            <a class="btn">Checkout</a>
+        </div>
+
+    </div>
+	
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

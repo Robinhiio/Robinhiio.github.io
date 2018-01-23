@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <div class="header_top">
+            <button class="logo">
+                <img src="images/pennorLogo_mini_test.png" alt="Logo" title="Pennor.com">
+            </button>
+            <div class="cart">
+                <a class = "cart_a" href="checkout.html"><img class="cart_image" src="images/cart.png"></a>
+                <p class="cart_quantity"></p>
+            </div>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+    <center><img class="break" src="images/break.png" alt="breakline"></center>
+</header>
+<main class="products_main">
+    <div class="products_items_section"></div>
+    <div class=products_description_section>
+        <div class=item_description_div>
+            <img class="item_description_img" src="images/auto2.jpg" height="472" width="600"/>
+            <h3 class="item_description_h3"></h3>
+            <p class=item_description_p></p>
+            <p class=item_price></p>
+            <a href="#" class="lightbox">View comments</a>
+            <button class="addCart">Add to cart</button>
+        </div>
+    </div>
+</main>
+<div class="backdrop"></div>
+<div class="box">
+  <div class="close">
+    x
+  </div>
+  <h4>Comments</h4>
+  <p id="comments">Here there be comments</p>
+</div>
+<script src="lightbox.js"></script>
+<script src="cartAnimation.js"></script>
+<script src="data.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

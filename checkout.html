@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Checkout - [Pennor.com]</title>
+</head>
+
+<body id ="checkout_page">
+<header id="header">
+    <div class="container">
+        <div class="header_top">
+            <button class="logo">
+                <img src="images/pennorLogo_mini_test.png" alt="Logo" title="Pennor.com">
+            </button>
+            <div class="cart">
+                <a class = "cart_a" href="checkout.html"><img class="cart_image" src="images/cart.png"></a>
+                <p class="cart_quantity"></p>
+            </div>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+    <center><img class="break" src="images/break.png" alt="breakline"></center>
+</header>
+  <main class="main_checkout">
+      <h1>Checkout</h1>
+    <span class="product_list">
+        <span class="shit">
+</span>
+
+    <button class ="undo">Undo</button>
+</span>
+      <ul id="total">
+          <li class = "vat_top">Vat 25%: 803,25sek</li>
+          <li id="totalsek"><u>Total</u></li>
+          <li class = "total" id="totalsek"></li>
+          <li>SCROLL DOWN TO PLACE ORDER!</li>
+      </ul>
+
+<div  class="right_list">
+    <span class="info">
+        <h3>Shipping information</h3>
+
+          <label><u>First name</u></label>
+          <input id="input_info_firstName" type="text" name="First name" required>
+            <label><u>Last name</u></label>
+            <input id="input_info_LastName" type="text" name="Last name" required>
+          <label><u>Street adress</u></label>
+          <input id="input_info_adress" type="text" name="Street adress" required>
+          <label><u>Zip code</u></label>
+          <input id="input_info_zipCode" type="text" name="Zip code" pattern="[0-9]+" required >
+        <label><u>City</u></label>
+        <input id="input_info_city" type="text" name="City" required>
+            <label><u>Country</u></label>
+            <select id="country" name="country" required>
+    <option value="Sweden"> </option>
+    <option value="Sweden">Sweden</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Norway">Norway</option>
+  </select>
+          <label><u>Email</u></label>
+          <input id="input_info_email" type="email" name="Email" required>
+      </span>
+      <span class="form_bottom">
+      <table class="shipping" >
+
+        <tr>
+          <td><u><h4>Delivery</h4></u></td>
+        </tr>
+        <tr>
+          <td><label>Standard</label></td>
+          <td><input id="shipping_standard" datatype="29" type="radio" name="radio1" value="Standard: 29 Sek"></td>
+        </tr>
+        <tr>
+          <td><label>Express</label></td>
+          <td><input id="shipping_express" datatype="100" type="radio" value="Express: 100 Sek" name="radio1"></td>
+        </tr>
+        <tr>
+          <td><label>Home delivery</label></td>
+          <td><input id="shipping_home" datatype="150" type="radio" value="Home delivery: 150 Sek" name="radio1"></td>
+        </tr>
+        <tr>
+          <td><label>Store pickup</label></td>
+          <td><input id="shipping_pickup" datatype="20" type="radio" value="Store pickup: 20 Sek" name="radio1"></td>
+        </tr>
+      </table>
+
+      <table class="shipping">
+        <tr>
+          <td><u><h4>Payment</h4></u></td>
+        </tr>
+        <tr>
+          <td><label>Card</label></td>
+          <td><input type="radio" value="Card" name="radio"></td>
+        </tr>
+        <tr>
+          <td><label>Klarna</label></td>
+          <td><input type="radio" value="Klarna" name="radio"></td>
+        </tr>
+        <tr>
+          <td><label>Swish</label></td>
+          <td><input type="radio" value="Swish" name="radio"></td>
+        </tr>
+        <tr>
+          <td><label>Bitcoin</label></td>
+          <td><input type="radio" value="Bitcoin" name="radio"></td>
+        </tr>
+      </table>
+     </span>
+
+
+
+     <span>
+      <table id="last_total">
+        <tr>
+          <td>Vat 25%:</td>
+          <td class = "vat"></td>
+        </tr>
+        <tr>
+          <td>Shipping:</td>
+          <td class = "shipping_total"></td>
+        </tr>
+        <tr>
+          <td><u>Total</u>:</td>
+          <td class = "absolute_total"></td>
+        </tr>
+      </table>
+
+     </span>
+
+     <span class="checkout_button_mini">
+      <input id="submit_button_checkout_mini" type="submit" name="" value="submit">
+     </span>
+
+      </div>
+
+
+  </main>
+
+  <div class="checkoutBox"></div>
+<div class="receiptTest">
+    <div class="close">x</div>
+
+    <h4 id="receiptId">Thank you for you purchase</h4>
+<div class="topBoxCheckout">
+    <div class="shippingBox">
+        <h6><u>Shipping Adress</u></h6>
+        <div id="tyFirstName"></div>
+        <div id="tyLastName"></div>
+        <div id="tyAdress"></div>
+        <div id="tyZipCode"></div>
+        <div id="tyCity"></div>
+        <div id="tyCountry"></div>
+        <div id="tyEmail"></div>
+
+    </div>
+
+    <div class="orderbox">
+        <h6><u>Order</u></h6>
+    </div>
+
+</div>
+    <div class="bottomBoxCheckout">
+        <div id="bottomBoxRight">
+            Total: <div class="absolute_total"></div>
+        </div>
+        <div id="bottomBoxLeft">
+            <u>Freight</u><div id="tyfreight"></div>
+            <div id="typayment"></div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<footer id="checkoutFooter">
+  <center><img class="break" src="images/break.png" alt="breakline"></center>
+  <p class="followUs">Follow us:</p>
+  <div class="socialMedia">
+    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook" title="Facebook"></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram" title="Instagram"></a>
+    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter" title="Twitter"></a>
+    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube" title="YouTube"></a>
+  </div>
+  <p>Copyright &#169; Pennor.com</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="js.js"></script>
+<script src="callejs.js"></script>
+</body>
+
+</html>

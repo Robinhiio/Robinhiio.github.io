@@ -1,0 +1,93 @@
+body{
+  font-family: Courier new;
+}
+header{
+  margin-top: -5%;
+}
+header > ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  left: -1.5%
+
+}
+header > ul > li > a{
+  text-decoration: none;
+  color: #000000;
+}
+
+header > ul > li
+{
+  margin-right: 25px;
+  margin-left: 25px;
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+}
+.logo{
+  position: relative;
+  top: 72px;
+  }
+.socialMedia{
+display: flex;
+flex-direction: row;
+justify-content:center;
+}
+.socialMedia > a > img{
+  height: 35px;
+  margin: 5px;
+
+}
+.followUs{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 32%;
+}
+footer > p{
+  text-align: right;
+  margin-right: 10px;
+}
+.biglogo
+{
+  display: flex;
+  justify-content: center;
+
+}
+footer
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/*---------new css code --------*/
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.askUs{
+  width: 30%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUs{
+  width: 30%;
+}
+.aboutUs > img{
+  width: 75%;
+}
+#askUsText{
+  font-weight: bold;
+}
+#aboutUsText{
+  font-weight: bold;
+}
+/*.break{
+margin-left: 420.8px;
+}*/
